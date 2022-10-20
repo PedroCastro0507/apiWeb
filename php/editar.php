@@ -8,12 +8,13 @@
   if($id == '') {
     echo "Erro algum campo vazio";
   }
-  if($preco == '' && $quantidade == ''){
+  if($nome == '' && $preco == '' && $quantidade == ''){
+    echo "Erro";
+  }elseif($preco == '' && $quantidade == ''){
     mysqli_query($con, "UPDATE produtos SET nome = '$nome' WHERE (id_produto = '$id')");
   }elseif($nome == '' && $quantidade == ''){
     mysqli_query($con, "UPDATE produtos SET preco = '$preco' WHERE (id_produto = '$id')");
   }elseif($nome == '' && $preco == ''){
     mysqli_query($con, "UPDATE produtos SET quantidade = '$quantidade' WHERE (id_produto = '$id')");
   }
- 
 ?>

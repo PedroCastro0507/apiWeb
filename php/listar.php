@@ -16,5 +16,4 @@
 
   $objetoJSON = json_encode($resposta);
   echo $objetoJSON;
-
 ?>

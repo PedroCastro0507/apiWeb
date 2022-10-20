@@ -64,14 +64,16 @@ p {
 }
 
 .painel,
-.voltar {
+.voltar,
+.vaiGrafico {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
+  margin: 170px 0;
 }
 
 .painel a,
-.voltar a {
+.voltar a,
+.vaiGrafico a {
   text-decoration: none;
   color: black;
   background: #34d5eb;
@@ -81,16 +83,12 @@ p {
 }
 
 .painel a:hover,
-.voltar a:hover {
+.voltar a:hover,
+.vaiGrafico a:hover{
   background: #25a9ba;
   border: solid 1px black;
   box-shadow: 5px 0 10px #666;
   cursor: pointer;
-}
-
-.grafico {
-  display: flex;
-  justify-content: center;
 }
 
 /* cards */
