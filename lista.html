@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Estágio</title>
+</head>
+
+<body>
+  <div class="voltar">
+    <a href="index.html">voltar</a>
+  </div>
+  <form id="excluirProduto" class="exclui">
+    <div class="excluir">
+      <input type="number" name="id_produto" id="id_produto" placeholder="Id do Produto">
+      <button onclick="excluir()">EXCLUIR</button>
+    </div>
+  </form>
+  <form id="editaProduto" class="edita">
+    <div class="editar">
+      <input type="number" name="id_produto" id="id_produto" placeholder="Id do Produto">
+
+      <input type="text" name="produto" id="produto" placeholder="Produto">
+
+      <input type="text" name="preco" id="preco" placeholder="Preço">
+
+      <input type="text" name="quantidade" id="quantidade" placeholder="Quantidade">
+
+      <button onclick="editar()">Editar</button>
+    </div>
+  </form>
+
+  <div id="produtos">
+    <form id="formProdutos">
+      <input type="hidden" name="id_produtos" id="id_produtos">
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
